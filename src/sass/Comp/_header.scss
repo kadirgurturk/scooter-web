@@ -1,0 +1,39 @@
+@use "../mixins" as *;
+@use "../variable";
+@use "../responsive" as r;
+
+
+.header{
+    font-family: variable.$secondary-font;
+    color: variable.$mid-grey;
+    @include section;
+    font-weight: 600;
+    @include r.destkop{
+        padding: 0 100px;
+    }
+    @include r.mobile{
+        padding: 0 50px;
+    }
+    .logo{
+        font-weight: 800;
+        font-size: 48px;
+    }
+
+    ul{
+        list-style:none;
+        outline: none;
+        @include flex_row;
+        align-items: center;
+        justify-content: space-between;
+        width: 600px;      
+        a {
+            text-decoration:none;
+            color: variable.$mid-grey;
+        }
+        .button{
+            @include button;
+           
+    }
+   
+}
+}

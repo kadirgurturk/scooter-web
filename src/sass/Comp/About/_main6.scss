@@ -1,0 +1,52 @@
+@use "../../mixins" as m;
+@use "../../variable" as v;
+
+
+.Main6{
+    @include m.flex-row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    .item{
+        @include m.flex_column;
+        height: 470px;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        width: 25%;
+        .mainImage{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .circle{
+
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-color: v.$yellow;
+            @include m.flex_column;
+            justify-content:center;
+            align-items: center;
+            font-size: 28px;
+            font-family: v.$secondary-font;
+        }
+        .title{
+            font-size: 28px;
+            font-family: v.$secondary-font;
+            color: v.$mid-mid-grey;
+
+        }
+        p{
+            width: 95%;
+            font-size: 16px;
+            line-height: 28px;
+            font-family: v.$primary-font;
+            color: v.$mid-lt-grey;
+        }
+
+    }
+}

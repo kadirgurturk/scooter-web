@@ -1,0 +1,16 @@
+@use './Comp/header';
+@use './Comp/footer';
+@use './Comp/Home/main1';
+@use './Comp/Home/main2';
+@use './Comp/Home/main3';
+@use './Comp/About/main4';
+@use './Comp/About/main5';
+@use './Comp/About/main6';
+@import "_variable";
+@import "_mixins";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

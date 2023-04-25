@@ -1,0 +1,76 @@
+@use "../mixins" as *;
+@use "../variable" as v;
+
+.footer{
+    font-family: v.$secondary-font;
+    
+    .section-up{
+        @include section;
+        height: 275px;
+        background-color: v.$mid-mid-grey;
+        position: relative;
+        .circles{
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+        }
+        .banner{
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            @include flex_row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100vw;
+            .title{
+                color: white;
+                font-size: 44px;
+                font-weight: 600;
+            }
+            .stores{
+                img{
+                    margin-right: 45px;
+                }
+                
+            }
+        }
+        .banner{
+            position: absolute
+            
+        }
+
+        
+    }
+    .section-down{
+        @include section;
+        background-color: v.$mid-grey;
+        height: 125px;
+        ul{
+            @include flex_row;
+            justify-content: space-around;
+            align-items: center;
+            width:350px;
+            color: v.$mid-lt-grey;
+            list-style:none;
+            .logo{
+                font-size: 36px;
+                font-weight: 700;
+            }
+            a{
+                text-decoration:none;
+                color: v.$mid-lt-grey;
+                list-style:none;
+                outline: none;
+            }
+        }
+        .logos{
+            @include flex_row;
+            justify-content: space-between;
+            align-items: center;
+            width: 250px
+        }
+    }
+}
+

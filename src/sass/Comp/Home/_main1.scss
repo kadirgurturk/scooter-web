@@ -1,0 +1,64 @@
+@use "../../mixins" as m;
+@use "../../variable" as v;
+@use "../../responsive" as *;
+
+
+.main1{
+    color: white;
+    font-family: v.$secondary-font;
+    width: 100vw;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .main1__line{
+        position: absolute;
+        left: 0;
+        top: 280px;
+        @include destkop{
+            display: none;
+        }
+    }
+    .main1__content{
+        position: absolute;
+        left: 200px;
+        top: 90px;
+        @include destkop{
+            left: 50%;
+            top: 120px;
+            transform: translate(-50%, -50%);
+        }   
+
+        h1{
+            font-size: 52px;
+        }
+        p{
+            font-size: 14px;
+            font-family: v.$primary-font;
+            position: absolute;
+            line-height: 28px;
+            left: 80px;
+            top:170px
+        }
+        a{
+            position: absolute;
+            @include m.button;
+            top:310px;
+            left: 80px;
+        }
+    }
+    .main__left{
+        position: absolute;
+        right:350px;
+        top:350px;
+        @include destkop{
+            right: 880px;
+        }
+    }
+    .circles{
+        position: absolute;
+        right: 0;
+        top:420px
+    }
+}
