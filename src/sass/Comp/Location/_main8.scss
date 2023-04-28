@@ -1,0 +1,25 @@
+@use "../../mixins" as m;
+@use "../../variable" as v;
+@use "../../responsive" as *;
+
+
+.main8{
+    position: relative;
+    width: 100vw;
+    height: 180px;
+
+    h2{
+        color: white;
+        position: absolute;
+        font-family: v.$secondary-font;
+        font-weight: 600;
+        font-size: 46px;
+        left: 120px;
+        top:50px
+    }
+    .circles{
+        position: absolute;
+        right: -20px;
+        top: 50px;
+    }
+}

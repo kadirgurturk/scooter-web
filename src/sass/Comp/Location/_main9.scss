@@ -1,0 +1,60 @@
+@use "../../mixins" as m;
+@use "../../variable" as v;
+@use "../../responsive" as *;
+
+.main9{
+    margin: 65px 0 ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    .city{
+        font-size: 20px;
+        font-family: v.$secondary-font;
+        color: v.$mid-mid-grey;
+        position: absolute;
+        background-color: v.$yellow;
+        @include m.center;
+        width: 170px;
+        height: 60px;
+        img{
+            position: absolute;
+            height: 45px;
+            width: 45px;
+            top: 42px;
+            z-index: 2;
+            
+        }
+    }
+    .l{
+        left: 39vw;
+        top: 9vh;
+    }
+    .n{
+        left: 17vw;
+        top: 20vh;
+    }
+
+    .j{
+        left: 71vw;
+        top: 51vh;
+    }
+
+    .y{
+        left: 78vw;
+        top: 21vh;
+    }
+
+    .c{
+        left:46.4vw;
+        top: 17.4vh;
+    }
+
+}
+
+
+
+
+

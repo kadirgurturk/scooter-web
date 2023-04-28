@@ -1,0 +1,35 @@
+@use "../../mixins" as m;
+@use "../../variable" as v;
+@use "../../responsive" as *;
+
+.main10{
+    font-family: v.$secondary-font;
+    width:100vw;
+    height: 400px;
+    @include m.center;
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        @include m.media3_content;
+
+        h4{
+            width: 25%;
+        }
+        p{
+            width: 25%;
+        }
+        a{
+            padding: 0 40px;
+            width: 220px;
+            margin-left: 70px;
+        }
+
+    }
+
+    
+
+
+    
+}

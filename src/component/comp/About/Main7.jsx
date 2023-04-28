@@ -1,4 +1,5 @@
 import { useState } from "react";
+import chevron from "../../../assets/icons/chevron.svg"
 
 const assets1 = [
     {
@@ -59,24 +60,60 @@ export const Main7 = () =>{
 
     }
 
+    
+    const handleClick2 = (d) =>{
+        
+        setDrive(drive => drive.map(dri => {
+            if(d.id === dri.id){
+                dri.status = !dri.status;
+            }
+            return dri;
+        }))
+
+
+    }
+
     return(
         <div className="Main7">
-            <div className="works">
-                <h3 className="title">How it works</h3>
-            </div>
-            <div className="container">
+           <div className="works">
+          
+                <h3 >How it works</h3>
+            
+                <div className="container container1">
                 {works.map(work => {
                     return (
                         <div className="item" key={work.id}>
                             <div className="title">
                                 <h4>{work.title}</h4>
-                                <div onClick={()=>handleClick(work)}>bs</div>
+                                <div onClick={()=>handleClick(work)}><img src={chevron}/></div>
                             </div>
                             {work.status && <div className="text">{work.text}</div>}
                         </div>
                     )
                 })}
-            </div>
+                </div>
+
+           </div>
+
+           
+            
+            <div className="works works2">
+                <h3 >Safe driving</h3>
+            
+                <div className="container container2">
+                {drive.map(dri => {
+                    return (
+                        <div className="item" key={dri.id}>
+                            <div className="title">
+                                <h4>{dri.title}</h4>
+                                <div onClick={()=>handleClick2(dri)}><img src={chevron}/></div>
+                            </div>
+                            {dri.status && <div className="text">{dri.text}</div>}
+                        </div>
+                    )
+                })}
+                </div>
+            </div>    
         </div>
     )
 }

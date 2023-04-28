@@ -1,0 +1,54 @@
+@use "../../mixins" as m;
+@use "../../variable" as v;
+@use "../../responsive" as *;
+
+
+.Main7{
+    margin: 145px 0 100px 0;
+    width: 100vw;
+    height: auto;
+    @include m.flex_column;
+    justify-content: center;
+    align-items: center;
+    font-family: v.$secondary-font;
+    .works{
+        @include m.flex-row;
+        width: 80%;
+        h3{
+
+            color: v.$mid-grey;
+            width: 420px;
+            height: 40px;
+            @include m.center;
+            font-size:36px;
+        }
+        .item{
+            background-color: rgb(230, 230, 230);
+            width: 800px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            padding: 40px 25px;
+            &:hover{
+                background-color: #fcb62b76;
+                
+            }
+            .title{
+                color: v.$mid-mid-grey;
+                font-size: 18px;
+                @include m.flex_row;
+                justify-content:space-between;
+                align-items: center;
+                img{
+                    cursor: pointer;
+                    
+                }
+            }
+            .text{
+                color: v.$mid-mid-grey;
+                padding: 10px ;
+                font-family: m.$primary-font;
+            }
+        }
+    }
+
+}

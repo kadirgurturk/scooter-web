@@ -1,0 +1,41 @@
+@use "../../mixins" as *;
+@use "../../variable" as v;
+
+.main12{
+    .main12_item{
+        width: 100vw;
+        height: 720px;
+        position: relative;
+        font-family: v.$secondary-font;
+        .content{
+            position: absolute;
+            left: 130px;
+            top: 100px;
+            width: 450px;
+            height: 360px;
+            @include flex_column;
+            justify-content: space-between;
+            @include media3_content;
+          
+
+        }
+        .ımage{
+            @include media3_image;
+            right: 270px;
+            top: 60px;
+        }
+        .leftdown{
+            position: absolute;
+            right: 0;
+            top: 350px;
+            z-index: 2;
+        }
+        .circle{
+            position: absolute;
+            z-index: -1;
+            left: 1320px;
+            top:50px
+            
+        }
+    }
+}

@@ -65,5 +65,11 @@
     background-position: center;
 }
 
+@mixin center{
+    @include flex_column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
