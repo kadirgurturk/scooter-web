@@ -1,7 +1,7 @@
 @use "../../mixins" as m;
 @use "../../variable" as v;
 @use "../../responsive" as *;
-
+@use "../../responsive" as r;
 
 .Main7{
     margin: 145px 0 100px 0;
@@ -14,6 +14,9 @@
     .works{
         @include m.flex-row;
         width: 80%;
+        @include r.destkop{
+            @include m.flex-column;
+        }
         h3{
 
             color: v.$mid-grey;
@@ -21,6 +24,10 @@
             height: 40px;
             @include m.center;
             font-size:36px;
+            @include r.destkop{
+                margin-bottom: 85px;
+                width: 100%;
+            }
         }
         .item{
             background-color: rgb(230, 230, 230);
@@ -28,6 +35,10 @@
             border-radius: 15px;
             margin-bottom: 25px;
             padding: 40px 25px;
+            @include r.destkop{
+                margin-bottom: 45px;
+
+            }
             &:hover{
                 background-color: #fcb62b76;
                 

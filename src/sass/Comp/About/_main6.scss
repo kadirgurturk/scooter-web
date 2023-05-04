@@ -1,12 +1,15 @@
 @use "../../mixins" as m;
 @use "../../variable" as v;
-
+@use "../../responsive" as r;
 
 .Main6{
     @include m.flex-row;
     justify-content: space-around;
     align-items: center;
     width: 100vw;
+    @include r.mobile{
+        @include m.flex-column;
+    }
     .item{
         @include m.flex_column;
         height: 470px;
@@ -14,6 +17,9 @@
         align-items: center;
         position: relative;
         width: 25%;
+        @include r.mobile{
+            height: 620px;
+        }
         .mainImage{
             height: 250px;
             width: 250px;
@@ -33,6 +39,9 @@
             align-items: center;
             font-size: 28px;
             font-family: v.$secondary-font;
+            @include r.mobile{
+                top: 215px;
+            }
         }
         .title{
             font-size: 28px;

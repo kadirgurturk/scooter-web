@@ -1,5 +1,5 @@
-@mixin bigtablet {
-    @media all and (max-width:1120px) {
+@mixin tablet {
+    @media all and (max-width:1020px) {
         @content
     }
 }
@@ -11,13 +11,14 @@
 }
 
 @mixin mobile {
-    @media all and (max-width:750px) {
+    @media all and (max-width:770px) {
         @content
     }
 }
 
-@mixin realmobile {
-    @media all and (max-width:440px) {
+@mixin midimobile {
+    @media all and (max-width:520px) {
         @content
     }
 }
+

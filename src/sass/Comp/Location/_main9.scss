@@ -3,53 +3,53 @@
 @use "../../responsive" as *;
 
 .main9{
-    margin: 65px 0 ;
+    margin: 65px auto ;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    width: 100vw;
-    height: 100vh;
+    background-size: cover;
+    width: 70vw;
+    height: 70vh;
     position: relative;
     .city{
-        font-size: 20px;
+        font-size: 18px;
         font-family: v.$secondary-font;
         color: v.$mid-mid-grey;
         position: absolute;
         background-color: v.$yellow;
         @include m.center;
-        width: 170px;
-        height: 60px;
+        width: 120px;
+        height: 45px;
         img{
             position: absolute;
             height: 45px;
             width: 45px;
-            top: 42px;
+            top: 28px;
             z-index: 2;
             
         }
     }
     .l{
-        left: 39vw;
-        top: 9vh;
+        left: 27vw;
+        top: 4.5vh;
     }
     .n{
-        left: 17vw;
-        top: 20vh;
+        left: 11.5vw;
+        top: 12vh;
     }
 
     .j{
-        left: 71vw;
-        top: 51vh;
+        left: 51vw;
+        top: 36.2vh;
     }
 
     .y{
-        left: 78vw;
-        top: 21vh;
+        left: 56vw;
+        top: 13vh;
     }
 
     .c{
-        left:46.4vw;
-        top: 17.4vh;
+        left: 33vw;
+        top: 11vh;
     }
 
 }

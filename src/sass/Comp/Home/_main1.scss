@@ -18,6 +18,7 @@
         top: 280px;
         @include destkop{
             display: none;
+          
         }
     }
     .main1__content{
@@ -25,10 +26,17 @@
         left: 200px;
         top: 90px;
         @include destkop{
+            height: 320px;
+            width: 500px;
+            position: absolute;
             left: 50%;
-            top: 120px;
+            top: 40%;
             transform: translate(-50%, -50%);
-        }   
+            @include m.flex_column;
+            align-items: center;
+            justify-content: space-around;
+        }
+ 
 
         h1{
             font-size: 52px;
@@ -39,13 +47,22 @@
             position: absolute;
             line-height: 28px;
             left: 80px;
-            top:170px
+            top:170px;
+            @include destkop{
+                line-height: 22px;
+                position: static;
+    
+            }
         }
         a{
             position: absolute;
             @include m.button;
             top:310px;
             left: 80px;
+            @include destkop{
+                position: static;
+    
+            }
         }
     }
     .main__left{
@@ -53,12 +70,21 @@
         right:350px;
         top:350px;
         @include destkop{
-            right: 880px;
+            left: -90px;
+
+        }
+        @include mobile{
+            left: -285px;
+
         }
     }
     .circles{
         position: absolute;
         right: 0;
-        top:420px
+        top:420px;
+        @include mobile{
+            display: none;
+
+        }
     }
 }

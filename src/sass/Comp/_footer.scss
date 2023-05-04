@@ -1,5 +1,6 @@
 @use "../mixins" as *;
 @use "../variable" as v;
+@use "../responsive" as r;
 
 .footer{
     font-family: v.$secondary-font;
@@ -9,6 +10,7 @@
         height: 275px;
         background-color: v.$mid-mid-grey;
         position: relative;
+
         .circles{
             position: absolute;
             z-index: 1;
@@ -24,10 +26,16 @@
             justify-content: space-around;
             align-items: center;
             width: 100vw;
+            @include r.tablet{
+                @include flex_column;
+            }
             .title{
                 color: white;
                 font-size: 44px;
                 font-weight: 600;
+                @include r.tablet{
+                    margin-bottom: 30px;
+                }
             }
             .stores{
                 img{
@@ -47,13 +55,27 @@
         @include section;
         background-color: v.$mid-grey;
         height: 125px;
+        @include r.tablet{
+            padding: 0 100px;
+         }
+         @include r.mobile{
+            @include flex_column;
+            height: 270px
+         }
+
         ul{
             @include flex_row;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
-            width:350px;
+            width:450px;
             color: v.$mid-lt-grey;
             list-style:none;
+            @include r.mobile{
+                @include flex_column;
+                height: 170px;
+                justify-content: space-between;
+             }
+
             .logo{
                 font-size: 36px;
                 font-weight: 700;
@@ -69,7 +91,14 @@
             @include flex_row;
             justify-content: space-between;
             align-items: center;
-            width: 250px
+            width: 250px;
+            @include r.tablet{
+               width: 150px;
+            }
+            @include r.mobile{
+                margin-bottom: 30px;
+             }
+            
         }
     }
 }

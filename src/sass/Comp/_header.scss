@@ -8,15 +8,15 @@
     color: variable.$mid-grey;
     @include section;
     font-weight: 600;
-    @include r.destkop{
-        padding: 0 100px;
+    @include r.tablet{
+        padding: 0 75px;
     }
-    @include r.mobile{
-        padding: 0 50px;
+
     }
+
     .logo{
         font-weight: 800;
-        font-size: 48px;
+        font-size: 32px;
     }
 
     ul{
@@ -25,15 +25,22 @@
         @include flex_row;
         align-items: center;
         justify-content: space-between;
-        width: 600px;      
+        width: 600px;
+        @include r.tablet{
+            width: 500px;
+        }
+    
+        
         a {
             text-decoration:none;
             color: variable.$mid-grey;
         }
         .button{
             @include button;
+            @include r.tablet{
+                width: 150px;
+            }
            
     }
    
-}
 }
