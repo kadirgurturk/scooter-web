@@ -1,5 +1,6 @@
 @use "../../mixins" as *;
 @use "../../variable" as v;
+@use "../../responsive" as r;
 
 .main12{
     .main12_item{
@@ -7,6 +8,10 @@
         height: 720px;
         position: relative;
         font-family: v.$secondary-font;
+        @include r.destkop{
+            height: 1000px;
+            
+        }
         .content{
             position: absolute;
             left: 130px;
@@ -16,6 +21,12 @@
             @include flex_column;
             justify-content: space-between;
             @include media3_content;
+            @include r.destkop{
+                top: 700px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+          
           
 
         }
@@ -23,18 +34,29 @@
             @include media3_image;
             right: 270px;
             top: 60px;
+            @include r.destkop{
+                top: 240px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
         .leftdown{
             position: absolute;
             right: 0;
             top: 350px;
             z-index: 2;
+            @include r.destkop{
+                right: -280px;
+            }
         }
         .circle{
             position: absolute;
             z-index: -1;
             left: 1320px;
-            top:50px
+            top:50px;
+            @include r.mobile{
+                right: -550px;
+            }
             
         }
     }

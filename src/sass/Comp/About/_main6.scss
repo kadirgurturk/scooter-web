@@ -19,6 +19,7 @@
         width: 25%;
         @include r.mobile{
             height: 620px;
+            width: 50%;
         }
         .mainImage{
             height: 250px;

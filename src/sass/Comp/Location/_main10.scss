@@ -1,11 +1,14 @@
 @use "../../mixins" as m;
 @use "../../variable" as v;
-@use "../../responsive" as *;
+@use "../../responsive" as r;
 
 .main10{
     font-family: v.$secondary-font;
     width:100vw;
-    height: 400px;
+    height: 500px;
+    @include r.destkop{
+        height: 500px;
+    }
     @include m.center;
     .container{
         display: flex;
@@ -13,17 +16,35 @@
         align-items: center;
         justify-content: center;
         @include m.media3_content;
+        @include r.destkop{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 500px;
+            height: 80%;
+        }
 
         h4{
             width: 25%;
+            @include r.destkop{
+                width: 65%;
+            }
         }
         p{
             width: 25%;
+            @include r.destkop{
+                width: 65%;
+            }
         }
         a{
             padding: 0 40px;
             width: 220px;
             margin-left: 70px;
+            @include r.destkop{
+                width: 65%;
+                margin-left: 0;
+            }
         }
 
     }

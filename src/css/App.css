@@ -914,6 +914,7 @@ ul .button:hover {
 @media all and (max-width: 770px) {
   .Main6 .item {
     height: 620px;
+    width: 50%;
   }
 }
 .Main6 .item .mainImage {
@@ -1001,6 +1002,7 @@ ul .button:hover {
 @media all and (max-width: 1280px) {
   .Main7 .works .item {
     margin-bottom: 45px;
+    width: 100%;
   }
 }
 .Main7 .works .item:hover {
@@ -1096,11 +1098,16 @@ ul .button:hover {
 .main10 {
   font-family: "Space Mono", monospace;
   width: 100vw;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media all and (max-width: 1280px) {
+  .main10 {
+    height: 500px;
+  }
 }
 .main10 .container {
   display: flex;
@@ -1135,16 +1142,42 @@ ul .button:hover {
   background-color: #939CAA;
   color: #FCB72B;
 }
+@media all and (max-width: 1280px) {
+  .main10 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 80%;
+  }
+}
 .main10 .container h4 {
   width: 25%;
 }
+@media all and (max-width: 1280px) {
+  .main10 .container h4 {
+    width: 65%;
+  }
+}
 .main10 .container p {
   width: 25%;
+}
+@media all and (max-width: 1280px) {
+  .main10 .container p {
+    width: 65%;
+  }
 }
 .main10 .container a {
   padding: 0 40px;
   width: 220px;
   margin-left: 70px;
+}
+@media all and (max-width: 1280px) {
+  .main10 .container a {
+    width: 65%;
+    margin-left: 0;
+  }
 }
 
 .main11 {
@@ -1172,6 +1205,11 @@ ul .button:hover {
   height: 720px;
   position: relative;
   font-family: "Space Mono", monospace;
+}
+@media all and (max-width: 1280px) {
+  .main12 .main12_item {
+    height: 1000px;
+  }
 }
 .main12 .main12_item .content {
   position: absolute;
@@ -1210,6 +1248,13 @@ ul .button:hover {
   background-color: #939CAA;
   color: #FCB72B;
 }
+@media all and (max-width: 1280px) {
+  .main12 .main12_item .content {
+    top: 700px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .main12 .main12_item .ımage {
   position: absolute;
   border-radius: 50%;
@@ -1220,17 +1265,34 @@ ul .button:hover {
   right: 270px;
   top: 60px;
 }
+@media all and (max-width: 1280px) {
+  .main12 .main12_item .ımage {
+    top: 240px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .main12 .main12_item .leftdown {
   position: absolute;
   right: 0;
   top: 350px;
   z-index: 2;
 }
+@media all and (max-width: 1280px) {
+  .main12 .main12_item .leftdown {
+    right: -280px;
+  }
+}
 .main12 .main12_item .circle {
   position: absolute;
   z-index: -1;
   left: 1320px;
   top: 50px;
+}
+@media all and (max-width: 770px) {
+  .main12 .main12_item .circle {
+    right: -550px;
+  }
 }
 
 .main13 {
@@ -1250,6 +1312,12 @@ ul .button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 0 35px;
+}
+@media all and (max-width: 1280px) {
+  .main13 .item {
+    width: 80%;
+    margin: 45px auto;
+  }
 }
 .main13 .item .content h4 {
   font-weight: 700;
