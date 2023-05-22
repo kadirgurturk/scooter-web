@@ -44,3 +44,68 @@
     }
    
 }
+//*************HeaderMobile***********//
+
+.headerMobile{
+    font-family: variable.$secondary-font;
+    color: variable.$mid-grey;
+    position: relative;
+    width: 100vw;
+    height: 50px;
+
+    .close{
+        position: absolute;
+        left: 25px;
+        top: 30%;
+    }
+
+    .logo{
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%,-30%);
+    }
+    .sidebar{
+        background-color: variable.$mid-grey;
+        z-index: 3;
+        position: absolute;
+        top:50px;
+        left: 0;
+        width: 165px;
+        height: 75vh;
+        padding: 35px 0;
+        @include flex_column;
+        align-items: center;
+        justify-content: space-between;
+
+        ul{
+            @include flex_column;
+            align-items: center;
+            justify-content: space-around;
+            li{
+                margin-bottom: 15px;
+                a{
+                    color: rgb(210, 210, 210);
+                    font-weight: 600;
+                    &:hover{
+                        color: rgb(255, 255, 255);
+                    }
+                    
+                }
+               
+            }
+
+
+        }
+
+        .button{
+            @include button;
+            @include r.tablet{
+                width: 135px;
+            }
+           
+        
+    }
+    }
+
+}

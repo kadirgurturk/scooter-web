@@ -70,6 +70,75 @@ ul .button:hover {
   }
 }
 
+.headerMobile {
+  font-family: "Space Mono", monospace;
+  color: #333A44;
+  position: relative;
+  width: 100vw;
+  height: 50px;
+}
+.headerMobile .close {
+  position: absolute;
+  left: 25px;
+  top: 30%;
+}
+.headerMobile .logo {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+}
+.headerMobile .sidebar {
+  background-color: #333A44;
+  z-index: 3;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 165px;
+  height: 75vh;
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerMobile .sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.headerMobile .sidebar ul li {
+  margin-bottom: 15px;
+}
+.headerMobile .sidebar ul li a {
+  color: rgb(210, 210, 210);
+  font-weight: 600;
+}
+.headerMobile .sidebar ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+.headerMobile .sidebar .button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #FCB72B;
+  color: white;
+  width: 160px;
+  height: 45px;
+  text-decoration: none;
+}
+.headerMobile .sidebar .button:hover {
+  background-color: #939CAA;
+  color: #FCB72B;
+}
+@media all and (max-width: 1020px) {
+  .headerMobile .sidebar .button {
+    width: 135px;
+  }
+}
+
 .footer {
   font-family: "Space Mono", monospace;
 }
