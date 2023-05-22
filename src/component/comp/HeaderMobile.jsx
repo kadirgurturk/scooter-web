@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import close from "../../assets/icons/close.svg"
 import hamburger from "../../assets/icons/hamburger.svg"
+import { motion } from "framer-motion"
 
 
 export const HeaderMobile = () =>{
@@ -9,7 +10,7 @@ export const HeaderMobile = () =>{
 
     return(
         <nav className="headerMobile">
-            <img className="close" src = {isClick ? close : hamburger} onClick={()=>{setClick(!isClick)}}></img>
+            <motion.img animate={{scale:1.2}} className="close" src = {isClick ? close : hamburger} onClick={()=>{setClick(!isClick)}}></motion.img>
             <h1 className="logo">
                 scoot
             </h1>

@@ -82,6 +82,10 @@ ul .button:hover {
   left: 25px;
   top: 30%;
 }
+.headerMobile .close:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
 .headerMobile .logo {
   position: absolute;
   left: 50%;
