@@ -2,7 +2,6 @@
 
 #### This project is the one of the Frontend Mentor [Challenges](https://www.frontendmentor.io/challenges/scoot-multipage-website-N76alNPRJ). This project is a multi-page website. There are 4 pages including home, about us, career, and location. Additionally, it has a responsive design
 
-## Demo of website: [scooter.website](scoterweb.netlify.app/)
 
 ## Used technologies & Methodology
 
